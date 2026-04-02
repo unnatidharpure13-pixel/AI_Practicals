@@ -24,6 +24,3 @@ This collection contains hands-on exercises, algorithms, and mini-projects that 
 
 ---
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/ai-practicals-python.git
