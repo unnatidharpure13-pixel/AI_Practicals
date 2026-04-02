@@ -1,0 +1,12 @@
+1(Basic) prompt:
+"Explain Poker in AI."
+Too vague, lacks structure, missing algorithms
+Add specific topics (minimax, example, complexity)
+2(Improved) prompt:
+"Explain Poker as an adversarial search problem. Include game tree, minimax, and example."
+Better, but lacks clarity on uncertainty
+Add constraints: diagrams, table, structured headings
+3(Refined) prompt:
+"Explain Poker as an adversarial search problem in AI. Include definition, game tree, minimax, alpha-beta limitations, example with actions, and complexity analysis in structured format with tables."
+High-quality, detailed, well-structured answer
+Final optimized prompt

@@ -1,0 +1,49 @@
+% -------- PARENT FACTS --------
+parent(vitthalrao,suresh).
+parent(nirmala,mangala).
+parent(suresh,unnati).
+parent(mangala,unnati).
+parent(suresh,rupal).
+parent(mangala,rupal).
+
+% -------- MALE FACTS --------
+male(vitthalrao).
+male(suresh).
+
+% -------- FEMALE FACTS --------
+female(nirmala).
+female(mangala).
+female(unnati).
+female(rupal).
+
+% -------- MARRIAGE FACTS --------
+husband(suresh,mangala).
+wife(mangala,suresh).
+
+% -------- RULES --------
+father(X,Y) :-
+    parent(X,Y),
+    male(X).
+
+mother(X,Y) :-
+    parent(X,Y),
+    female(X).
+
+child(X,Y) :-
+    parent(Y,X).
+
+sibling(X,Y) :-
+    parent(Z,X),
+    parent(Z,Y),
+    X \= Y.
+
+grandparent(X,Y) :-
+    parent(X,Z),
+    parent(Z,Y).
+
+ancestor(X,Y) :-
+    parent(X,Y).
+
+ancestor(X,Y) :-
+    parent(X,Z),
+    ancestor(Z,Y).
